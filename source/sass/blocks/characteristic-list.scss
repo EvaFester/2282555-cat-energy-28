@@ -1,31 +1,31 @@
 .characteristic-list {
-	padding: 0;
-	display: flex;
-	flex-direction: column;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 
-	@media #{$not-mobile} {
-		gap: 5px;
-	}
+  @media #{$not-mobile} {
+    gap: 5px;
+  }
 
-	@media #{$tablet-only} {
-		gap: 8px;
-	}
+  @media #{$tablet-only} {
+    gap: 8px;
+  }
 }
 
 .characteristic-list__description {
-	position: relative;
-	display: flex;
-	justify-content: space-between;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 
-	@media #{$not-mobile} {
-		border-bottom: solid 1px #cdcdcd;
-	}
+  @media #{$not-mobile} {
+    border-bottom: solid 1px #cdcdcd;
+  }
 
-	@media #{$tablet-only} {
-		padding-bottom: 5px;
-	}
+  @media #{$tablet-only} {
+    padding-bottom: 5px;
+  }
 
-	@media #{$desktop-only} {
-		padding-bottom: 10px;
-	}
+  @media #{$desktop-only} {
+    padding-bottom: 10px;
+  }
 }

@@ -11,85 +11,85 @@
 <!-- 🔷 Webp генерируется в прод-сборке. Проверить — `npm run preview` 🔷 -->
 
 <main class="main-container">
-	<section class="hero">
-		<div class="page__leveler hero__container">
-			<div class="hero__text">
-				<h1 class="hero__title heading heading--lvl_1">Функциональное<br>питание для котов</h1>
-				<div class="hero__slogan">
-					<p>Занялся собой? Займись котом!</p>
-				</div>
-				<a class="hero__button button button--main button--color_basic" href="form.html">подобрать программу</a>
-			</div>
-			<div class="hero__product-wrapper">
-				{% include "./templates/picture.twig" with {name: "hero-product", class: "hero__product", alt: "Внешний вид упаковки корма."} %}
-			</div>
-		</div>
-	</section>
-	<section class="nutrition-programs page__leveler">
-		<h2 class="visually-hidden">Программы питания</h2>
-		<div class="nutrition-programs__item nutrition-programs__item--slim">
-			<h3 class="nutrition-programs__title heading heading--lvl_3">похудение</h3>
-			<div class="nutrition-programs__text-wrapper">
-				Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-			</div>
-			<a class="nutrition-programs__link" href="catalog.html">каталог slim</a>
-		</div>
-		<div class="nutrition-programs__item nutrition-programs__item--pro">
-			<h3 class="nutrition-programs__title heading heading--lvl_3">Набор массы</h3>
-			<div class="nutrition-programs__text-wrapper">
-				Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-			</div>
-			<a class="nutrition-programs__link" href="catalog.html">каталог pro</a>
-		</div>
-	</section>
-	<section class="features page__leveler">
-		<h2 class="features__title heading heading--lvl_1">Как это работает</h2>
-		<ol class="features__list">
-			<li class="features__item features__item--first features__item--icon_leaf">
-				Функциональное питание<br>содержит только полезные<br>питательные вещества.
-			</li>
-			<li class="features__item features__item--icon_tub">
-				Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-			</li>
-			<li class="features__item features__item--icon_eat">
-				Замените один-два приема<br>обычной еды на наше<br>функциональное питание.
-			</li>
-			<li class="features__item features__item--br features__item--icon_alarm">
-				Уже через месяц наслаждайтесь изменениями к лучшему<br>&ensp;
-				вашего питомца!
-			</li>
-		</ol>
-	</section>
-	<section class="example page__leveler">
-		<div class="example__text">
-			<h2 class="example__title heading heading--lvl_1 ">Живой пример</h2>
-			<p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат<br> &ensp;
-				без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-			<dl class="example__stats">
-				<div class="example__wrapper example__wrapper--block">
-					<dt class="example__name">снижение веса</dt>
-					<dd class="example__value example__value--block">5 КГ</dd>
-				</div>
-				<div class="example__wrapper example__wrapper--block">
-					<dt class="example__name">затрачено времени</dt>
-					<dd class="example__value example__value--block">60 ДНЕЙ</dd>
-				</div>
-				<div class="example__wrapper example__wrapper--line">
-					<dt class="example__line">Затраты на питание:</dt>
-					<dd class="example__value example__value--line"> 15 000 РУБ.</dd>
-				</div>
-			</dl>
-		</div>
-		<figure class="example__slider slider">
-			<figcaption class="slider__description visually-hidden">Кот Борис до и после 2 месяцев питания кормом Cat Energy Slim.</figcaption>
-			<div class="slider__content" style="--curtain-place: 0.5;">
-				{% include "./templates/picture.twig" with {name: "slider-before", class: "slider__image slider__image--cat_before", alt: "Кот Борис до похудения."} %}
-				<div class="slider__bar">
-					<button class="slider__toggle" type="button" hidden></button>
-				</div>
-				{% include "./templates/picture.twig" with {name: "slider-after", class: "slider__image slider__image--cat_after", alt: "Кот Борис после похудения."} %}
-			</div>
-		</figure>
-	</section>
+  <section class="hero">
+    <div class="page__leveler hero__container">
+      <div class="hero__text">
+        <h1 class="hero__title heading heading--lvl_1">Функциональное<br>питание для котов</h1>
+        <div class="hero__slogan">
+          <p>Занялся собой? Займись котом!</p>
+        </div>
+        <a class="hero__button button button--main button--color_basic" href="form.html">подобрать программу</a>
+      </div>
+      <div class="hero__product-wrapper">
+        {% include "./templates/picture.twig" with {name: "hero-product", class: "hero__product", alt: "Внешний вид упаковки корма."} %}
+      </div>
+    </div>
+  </section>
+  <section class="nutrition-programs page__leveler">
+    <h2 class="visually-hidden">Программы питания</h2>
+    <div class="nutrition-programs__item nutrition-programs__item--slim">
+      <h3 class="nutrition-programs__title heading heading--lvl_3">похудение</h3>
+      <div class="nutrition-programs__text-wrapper">
+        Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+      </div>
+      <a class="nutrition-programs__link" href="catalog.html">каталог slim</a>
+    </div>
+    <div class="nutrition-programs__item nutrition-programs__item--pro">
+      <h3 class="nutrition-programs__title heading heading--lvl_3">Набор массы</h3>
+      <div class="nutrition-programs__text-wrapper">
+        Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+      </div>
+      <a class="nutrition-programs__link" href="catalog.html">каталог pro</a>
+    </div>
+  </section>
+  <section class="features page__leveler">
+    <h2 class="features__title heading heading--lvl_1">Как это работает</h2>
+    <ol class="features__list">
+      <li class="features__item features__item--first features__item--icon_leaf">
+        Функциональное питание<br>содержит только полезные<br>питательные вещества.
+      </li>
+      <li class="features__item features__item--icon_tub">
+        Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+      </li>
+      <li class="features__item features__item--icon_eat">
+        Замените один-два приема<br>обычной еды на наше<br>функциональное питание.
+      </li>
+      <li class="features__item features__item--br features__item--icon_alarm">
+        Уже через месяц наслаждайтесь изменениями к лучшему<br>&ensp;
+        вашего питомца!
+      </li>
+    </ol>
+  </section>
+  <section class="example page__leveler">
+    <div class="example__text">
+      <h2 class="example__title heading heading--lvl_1 ">Живой пример</h2>
+      <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат<br> &ensp;
+        без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+      <dl class="example__stats">
+        <div class="example__wrapper example__wrapper--block">
+          <dt class="example__name">снижение веса</dt>
+          <dd class="example__value example__value--block">5 КГ</dd>
+        </div>
+        <div class="example__wrapper example__wrapper--block">
+          <dt class="example__name">затрачено времени</dt>
+          <dd class="example__value example__value--block">60 ДНЕЙ</dd>
+        </div>
+        <div class="example__wrapper example__wrapper--line">
+          <dt class="example__line">Затраты на питание:</dt>
+          <dd class="example__value example__value--line"> 15 000 РУБ.</dd>
+        </div>
+      </dl>
+    </div>
+    <figure class="example__slider slider">
+      <figcaption class="slider__description visually-hidden">Кот Борис до и после 2 месяцев питания кормом Cat Energy Slim.</figcaption>
+      <div class="slider__content" style="--curtain-place: 0.5;">
+        {% include "./templates/picture.twig" with {name: "slider-before", class: "slider__image slider__image--cat_before", alt: "Кот Борис до похудения."} %}
+        <div class="slider__bar">
+          <button class="slider__toggle" type="button" hidden></button>
+        </div>
+        {% include "./templates/picture.twig" with {name: "slider-after", class: "slider__image slider__image--cat_after", alt: "Кот Борис после похудения."} %}
+      </div>
+    </figure>
+  </section>
 </main>
 {% endblock %}

@@ -1,79 +1,79 @@
 .slider {
-	--current-color: #666666;
+  --current-color: #666666;
 }
 
 .slider__content {
-	display: grid;
-	grid-template-columns: calc(var(--curtain-place) * 100%) auto calc((1 - var(--curtain-place)) * 100%);
-	width: min(100%, 560px);
-	aspect-ratio: 280/256;
+  display: grid;
+  grid-template-columns: calc(var(--curtain-place) * 100%) auto calc((1 - var(--curtain-place)) * 100%);
+  width: min(100%, 560px);
+  aspect-ratio: 280/256;
 
-	@media #{$tablet-only} {
-		margin: 0 auto;
-	}
+  @media #{$tablet-only} {
+    margin: 0 auto;
+  }
 }
 
 
 .slider__image {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 
-	&--cat_before {
-		object-position: left;
-	}
+  &--cat_before {
+    object-position: left;
+  }
 
-	&--cat_after {
-		object-position: right;
-	}
+  &--cat_after {
+    object-position: right;
+  }
 }
 
 .slider__bar {
-	grid-column: 2;
-	z-index: 1;
-	display: grid;
-	place-items: center;
-	margin: 0 -2px;
-	width: 4px;
-	height: 100%;
-	border-radius: 2px;
-	color: var(--current-color);
-	background-color: var(--current-color);
+  grid-column: 2;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  margin: 0 -2px;
+  width: 4px;
+  height: 100%;
+  border-radius: 2px;
+  color: var(--current-color);
+  background-color: var(--current-color);
 
-	&:hover {
-		--current-color: #68b738;
-	}
+  &:hover {
+    --current-color: #68b738;
+  }
 
-	&:active {
-		--current-color: hsl(97 42% 65% / 1);
-	}
+  &:active {
+    --current-color: hsl(97 42% 65% / 1);
+  }
 }
 
 .slider__toggle {
-	display: grid;
-	width: 40px;
-	height: 40px;
-	box-sizing: border-box;
-	border-radius: 20px;
-	border: solid 2px var(--current-color);
-	margin-left: -17px;
-	cursor: col-resize;
-	background-color: #ffffff;
+  display: grid;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: solid 2px var(--current-color);
+  margin-left: -17px;
+  cursor: col-resize;
+  background-color: #ffffff;
 
-	&::before {
-		content: "";
-		width: 100%;
-		height: 100%;
-		background-color: var(--current-color);
-		mask-image: url("../../icons/stack.svg#slider__toggle");
-	}
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--current-color);
+    mask-image: url("../../icons/stack.svg#slider__toggle");
+  }
 
-	&:hover {
-		--current-color: #68b738;
-	}
+  &:hover {
+    --current-color: #68b738;
+  }
 
-	&:active {
-		--current-color: hsl(97 57% 43% / 0.6);
-	}
+  &:active {
+    --current-color: hsl(97 57% 43% / 0.6);
+  }
 }

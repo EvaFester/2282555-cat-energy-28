@@ -1,74 +1,74 @@
 .questionnaire {
-	@media #{$tablet-only} {
-		margin-left: 70px;
-	}
+  @media #{$tablet-only} {
+    margin-left: 70px;
+  }
 }
 
 .questionnaire__title {
-	margin-top: 26px;
-	margin-bottom: 34px;
+  margin-top: 26px;
+  margin-bottom: 34px;
 
-	@media #{$tablet-only} {
-		margin-top: 62px;
-		margin-bottom: 54px;
-	}
+  @media #{$tablet-only} {
+    margin-top: 62px;
+    margin-bottom: 54px;
+  }
 
-	@media #{$desktop-only} {
-		margin-top: 70px;
-		margin-bottom: 56px;
-	}
+  @media #{$desktop-only} {
+    margin-top: 70px;
+    margin-bottom: 56px;
+  }
 }
 
 .questionnaire__slogan {
-	color: #000000;
-	font-family: var(--accent-font);
-	margin-bottom: 66px;
-	text-transform: uppercase;
+  color: #000000;
+  font-family: var(--accent-font);
+  margin-bottom: 66px;
+  text-transform: uppercase;
 
-	@media #{$not-mobile} {
-		font-size: 20px;
-		line-height: 30px;
-	}
+  @media #{$not-mobile} {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
-	@media #{$mobile-only} {
-		margin-bottom: 39px;
-	}
+  @media #{$mobile-only} {
+    margin-bottom: 39px;
+  }
 }
 
 .questionnaire__submit {
-	border: none;
-	padding: 13px 10px;
-	line-height: 20px;
-	width: 100%;
+  border: none;
+  padding: 13px 10px;
+  line-height: 20px;
+  width: 100%;
 
-	@media #{$mobile-only} {
-		margin-top: 10px;
-		font-size: 16px;
-		padding: 10px;
-	}
+  @media #{$mobile-only} {
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 10px;
+  }
 
-	@media #{$not-mobile} {
-		min-height: 52px;
-		margin-top: -12px;
-	}
+  @media #{$not-mobile} {
+    min-height: 52px;
+    margin-top: -12px;
+  }
 
-	@media #{$tablet-only} {
-		width: 282px;
-	}
+  @media #{$tablet-only} {
+    width: 282px;
+  }
 
-	@media #{$desktop-only} {
-		width: 569px;
-	}
+  @media #{$desktop-only} {
+    width: 569px;
+  }
 }
 
 .questionnaire__footnote {
-	font-family: var(--main-font);
-	font-size: 14px;
-	line-height: 16px;
-	color: #000000;
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
 
-	@media #{$not-mobile} {
-		font-size: 16px;
-		margin-top: -20px;
-	}
+  @media #{$not-mobile} {
+    font-size: 16px;
+    margin-top: -20px;
+  }
 }

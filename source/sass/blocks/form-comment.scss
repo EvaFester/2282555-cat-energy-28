@@ -1,39 +1,39 @@
 .form-comment {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-comment__title {
-	@media #{$mobile-only} {
-		margin-bottom: 36px;
-	}
+  @media #{$mobile-only} {
+    margin-bottom: 36px;
+  }
 
-	@media #{$tablet-only} {
-		margin: -3px 0 73px 0;
-	}
+  @media #{$tablet-only} {
+    margin: -3px 0 73px 0;
+  }
 
-	@media #{$not-mobile} {
-		margin-bottom: 76px;
-	}
+  @media #{$not-mobile} {
+    margin-bottom: 76px;
+  }
 }
 
 .form-comment__field {
-	box-sizing: border-box;
-	padding: 9px 12px 9px 15px;
-	min-height: 132px;
-	width: 100%;
+  box-sizing: border-box;
+  padding: 9px 12px 9px 15px;
+  min-height: 132px;
+  width: 100%;
 
-	@media #{$mobile-only} {
-		min-height: 150px;
-		padding-top: 5px;
-	}
+  @media #{$mobile-only} {
+    min-height: 150px;
+    padding-top: 5px;
+  }
 
-	@media #{$not-mobile} {
-		min-height: 170px;
-		padding: 10px 19px;
-	}
+  @media #{$not-mobile} {
+    min-height: 170px;
+    padding: 10px 19px;
+  }
 
-	@media #{$tablet-only} {
-		padding: 8px 19px;
-	}
+  @media #{$tablet-only} {
+    padding: 8px 19px;
+  }
 }

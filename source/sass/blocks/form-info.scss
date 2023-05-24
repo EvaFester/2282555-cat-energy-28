@@ -1,20 +1,20 @@
 .form-info {
-	display: flex;
-	flex-direction: column;
-	row-gap: 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
 
-	@media #{$not-mobile} {
-		row-gap: 22px;
-	}
+  @media #{$not-mobile} {
+    row-gap: 22px;
+  }
 }
 
 
 .form-info__number {
-	appearance: textfield;
-	user-select: none;
+  appearance: textfield;
+  user-select: none;
 }
 
 .form-info__number::-webkit-outer-spin-button,
 .form-info__number::-webkit-inner-spin-button {
-	appearance: none;
+  appearance: none;
 }

@@ -1,212 +1,212 @@
 .product-card :is(picture, source) {
-	display: contents;
+  display: contents;
 }
 
 .product-card {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
-	@media #{$mobile-only} {
-		padding-top: 20px;
-	}
+  @media #{$mobile-only} {
+    padding-top: 20px;
+  }
 
-	@media #{$not-mobile} {
-		padding: 1px 38px 39px;
-		background: linear-gradient(to bottom, #ffffff 75px, #f2f2f2 75px);
-		font-size: 16px;
-	}
+  @media #{$not-mobile} {
+    padding: 1px 38px 39px;
+    background: linear-gradient(to bottom, #ffffff 75px, #f2f2f2 75px);
+    font-size: 16px;
+  }
 
-	@media #{$desktop-only} {
-		background: linear-gradient(to bottom, #ffffff 85px, #f2f2f2 85px);
-	}
+  @media #{$desktop-only} {
+    background: linear-gradient(to bottom, #ffffff 85px, #f2f2f2 85px);
+  }
 
-	&--more {
-		--icon-size: 60px;
-		outline: solid 1px #f2f2f2;
-		position: static;
-		background: #ffffff;
+  &--more {
+    --icon-size: 60px;
+    outline: solid 1px #f2f2f2;
+    position: static;
+    background: #ffffff;
 
-		@media #{$mobile-only} {
-			--icon-size: 30px;
-			outline: none;
-			background-position: center -52px;
-			font-size: 12px;
-			line-height: 16px;
-		}
+    @media #{$mobile-only} {
+      --icon-size: 30px;
+      outline: none;
+      background-position: center -52px;
+      font-size: 12px;
+      line-height: 16px;
+    }
 
-		@media #{$not-mobile} {
-			line-height: 18px;
-		}
-	}
+    @media #{$not-mobile} {
+      line-height: 18px;
+    }
+  }
 }
 
 
 .product-card__image-wrapper {
-	order: -1;
-	justify-self: center;
+  order: -1;
+  justify-self: center;
 
-	@media #{$mobile-only} {
-		grid-row: span 2;
-		align-self: end;
-		margin-bottom: 4;
-	}
+  @media #{$mobile-only} {
+    grid-row: span 2;
+    align-self: end;
+    margin-bottom: 4;
+  }
 
-	@media #{$not-mobile} {
-		grid-column: span 2;
+  @media #{$not-mobile} {
+    grid-column: span 2;
 
-		&--small {
-			padding-top: 24px;
-		}
-	}
+    &--small {
+      padding-top: 24px;
+    }
+  }
 
-	&--small {
-		@media #{$tablet-only} {
-			padding-top: 30px;
-		}
-	}
+  &--small {
+    @media #{$tablet-only} {
+      padding-top: 30px;
+    }
+  }
 
-	@media #{$mobile-only} {
-		margin-bottom: -5px;
+  @media #{$mobile-only} {
+    margin-bottom: -5px;
 
-		&--small_position {
-			margin-bottom: 5px;
-		}
-	}
+    &--small_position {
+      margin-bottom: 5px;
+    }
+  }
 }
 
 .product-card__image {
-	display: block;
+  display: block;
 }
 
 
 .product-card__title {
-	justify-self: center;
-	font-family: var(--accent-font);
-	font-size: 16px;
-	line-height: 20px;
-	font-weight: 400;
-	text-transform: uppercase;
-	color: #222222;
-	margin-top: 34px;
-	padding-right: 10px;
-	text-align: left;
+  justify-self: center;
+  font-family: var(--accent-font);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+  margin-top: 34px;
+  padding-right: 10px;
+  text-align: left;
 
-	@media #{$mobile-only} {
-		margin: 0;
-		padding-right: 50px;
+  @media #{$mobile-only} {
+    margin: 0;
+    padding-right: 50px;
 
-		&--more {
-			text-align: center;
-			padding: 0;
-			margin-bottom: 9px;
-		}
-	}
+    &--more {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 9px;
+    }
+  }
 
-	@media #{$not-mobile} {
-		text-align: center;
-		grid-column: span 2;
-		font-size: 20px;
-		line-height: 21px;
-		padding: 0 15px;
-	}
+  @media #{$not-mobile} {
+    text-align: center;
+    grid-column: span 2;
+    font-size: 20px;
+    line-height: 21px;
+    padding: 0 15px;
+  }
 
-	@media #{$tablet-only} {
-		padding: 0 55px;
-		margin-top: 31px;
-		margin-bottom: 20px;
-		line-height: 24px;
+  @media #{$tablet-only} {
+    padding: 0 55px;
+    margin-top: 31px;
+    margin-bottom: 20px;
+    line-height: 24px;
 
-		&--more {
-			padding: 0;
-		}
-	}
+    &--more {
+      padding: 0;
+    }
+  }
 
-	@media #{$desktop-only} {
-		margin: 47px 0 23px;
+  @media #{$desktop-only} {
+    margin: 47px 0 23px;
 
-		&--big {
-			margin: 50px 0 25px;
-		}
-	}
+    &--big {
+      margin: 50px 0 25px;
+    }
+  }
 }
 
 .product-card__title--more::before {
-	content: "";
-	margin: 46px auto 50px;
-	width: var(--icon-size);
-	height: var(--icon-size);
-	display: block;
-	background-image: url("../../icons/stack.svg#plus");
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-color: transparent;
+  content: "";
+  margin: 46px auto 50px;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  display: block;
+  background-image: url("../../icons/stack.svg#plus");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: transparent;
 
-	@media #{$mobile-only} {
-		margin: 5px auto 23px;
-	}
+  @media #{$mobile-only} {
+    margin: 5px auto 23px;
+  }
 
-	@media #{$tablet-only} {
-		margin: 47px auto 46px;
-	}
+  @media #{$tablet-only} {
+    margin: 47px auto 46px;
+  }
 }
 
 .product-card__characteristic-wrapper {
-	@media #{$mobile-only} {
-		margin-top: 15px;
-		font-size: 12px;
-		line-height: 16px;
-	}
+  @media #{$mobile-only} {
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 16px;
+  }
 
-	@media #{$not-mobile} {
-		grid-column: span 2;
-	}
+  @media #{$not-mobile} {
+    grid-column: span 2;
+  }
 }
 
 .product-card__characteristic {
-	margin: 0;
+  margin: 0;
 
-	@media #{$desktop-only} {
-		font-size: 16px;
-		line-height: 16px;
-	}
+  @media #{$desktop-only} {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .product-card__text-wrapper {
-	text-align: center;
-	grid-column: span 2;
+  text-align: center;
+  grid-column: span 2;
 
-	@media #{$mobile-only} {
-		margin-top: 58px;
-	}
+  @media #{$mobile-only} {
+    margin-top: 58px;
+  }
 
-	@media #{$tablet-only} {
-		padding: 0 40px;
-		margin-top: 122px;
-	}
+  @media #{$tablet-only} {
+    padding: 0 40px;
+    margin-top: 122px;
+  }
 }
 
 .product-card__button {
-	margin-top: 33px;
-	grid-column: span 2;
+  margin-top: 33px;
+  grid-column: span 2;
 
-	@media #{$not-mobile} {
-		&--more {
+  @media #{$not-mobile} {
+    &--more {
 
-			margin-top: 85px;
-		}
-	}
+      margin-top: 85px;
+    }
+  }
 
-	@media #{$mobile-only} {
-		margin-top: 21px;
-		font-size: 16px;
-		line-height: 20px;
-	}
+  @media #{$mobile-only} {
+    margin-top: 21px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 
-	@media #{$tablet-only} {
-		margin-top: 34px;
+  @media #{$tablet-only} {
+    margin-top: 34px;
 
-		&--more {
-			margin-top: 90px;
-		}
-	}
+    &--more {
+      margin-top: 90px;
+    }
+  }
 }

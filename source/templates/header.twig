@@ -1,28 +1,28 @@
 <header class="page__header">
-	<div class="page__leveler header-container">
-		<a class="logo logo--header" href="./" {% if permalink == "./" %}aria-current="page" {% endif %}>
-			<div class="logo__wrapper">
-				<picture>
-					<source media="(min-width:1150px)" srcset="./img/logo.svg#logo-desktop" width="71" height="60">
-					<source media="(min-width:768px)" srcset="./img/logo.svg#logo-tablet" width="61" height="50">
-					<img class="logo__image" src="./img/logo.svg#logo" width="34" height="38" alt="Фирменный знак.">
-				</picture>
-			</div>
-			<img class=" logo__text logo__text--header" src="./img/logo.svg#brand-name-header" width="119" height="22" alt="Логотип Cat Energy.">
-		</a>
-		<nav class="navigation navigation--opened navigation--nojs {% if permalink == "./" %}navigation--text_white{% endif %}">
-			<button class="navigation__toggle" type="button">
-				<span class="visually-hidden">Открыть меню</span>
-			</button>
-			<div class="navigation__wrapper">
-				<ul class="navigation__list">
-					{% for page in pages %}
-					<li class="navigation__item">
-						<a class="navigation__link" href="{{page.path}}" {% if permalink == page.path %} aria-current="page" {% endif %}>{{page.name}}</a>
-					</li>
-					{% endfor %}
-				</ul>
-			</div>
-		</nav>
-	</div>
+  <div class="page__leveler header-container">
+    <a class="logo logo--header" href="./" {% if permalink == "./" %}aria-current="page" {% endif %}>
+      <div class="logo__wrapper">
+        <picture>
+          <source media="(min-width:1150px)" srcset="./img/logo.svg#logo-desktop" width="71" height="60">
+          <source media="(min-width:768px)" srcset="./img/logo.svg#logo-tablet" width="61" height="50">
+          <img class="logo__image" src="./img/logo.svg#logo" width="34" height="38" alt="Фирменный знак.">
+        </picture>
+      </div>
+      <img class=" logo__text logo__text--header" src="./img/logo.svg#brand-name-header" width="119" height="22" alt="Логотип Cat Energy.">
+    </a>
+    <nav class="navigation navigation--opened navigation--nojs {% if permalink == "./" %}navigation--text_white{% endif %}">
+      <button class="navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="navigation__wrapper">
+        <ul class="navigation__list">
+          {% for page in pages %}
+          <li class="navigation__item">
+            <a class="navigation__link" href="{{page.path}}" {% if permalink == page.path %} aria-current="page" {% endif %}>{{page.name}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>

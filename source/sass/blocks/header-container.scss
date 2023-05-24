@@ -1,13 +1,13 @@
 .header-container {
-	display: flex;
-	min-height: 65px;
-	position: relative;
+  display: flex;
+  min-height: 65px;
+  position: relative;
 
-	@media #{$mobile-only} {
-		flex-direction: column;
-	}
+  @media #{$mobile-only} {
+    flex-direction: column;
+  }
 
-	@media #{$tablet-only} {
-		min-height: 52px;
-	}
+  @media #{$tablet-only} {
+    min-height: 52px;
+  }
 }

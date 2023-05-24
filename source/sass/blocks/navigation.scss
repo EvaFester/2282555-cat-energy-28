@@ -1,191 +1,191 @@
 .navigation {
-	display: flex;
-	position: relative;
-	--border-color: #68b738;
-	flex-wrap: wrap;
+  display: flex;
+  position: relative;
+  --border-color: #68b738;
+  flex-wrap: wrap;
 
-	@media #{$mobile-only} {
-		justify-content: center;
-	}
+  @media #{$mobile-only} {
+    justify-content: center;
+  }
 
-	@media #{$not-mobile} {
-		margin-left: auto;
-		max-width: 500px;
-	}
+  @media #{$not-mobile} {
+    margin-left: auto;
+    max-width: 500px;
+  }
 
-	@media #{$desktop-only} {
-		max-width: 600px;
-	}
+  @media #{$desktop-only} {
+    max-width: 600px;
+  }
 
-	&--text_white {
-		@media #{$desktop-only} {
-			--link-color: #ffffff;
-			--border-color: #ffffff;
-		}
-	}
+  &--text_white {
+    @media #{$desktop-only} {
+      --link-color: #ffffff;
+      --border-color: #ffffff;
+    }
+  }
 }
 
 .navigation__wrapper {
-	align-self: center;
+  align-self: center;
 
-	@media #{$mobile-only} {
-		position: absolute;
-		background-color: #ffffff;
-		width: 100vw;
-		top: 0;
-		z-index: 1;
-	}
+  @media #{$mobile-only} {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+  }
 }
 
 .navigation--closed .navigation__wrapper {
-	@media #{$mobile-only} {
-		display: none;
-	}
+  @media #{$mobile-only} {
+    display: none;
+  }
 }
 
 .navigation__list {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-wrap: wrap;
-	gap: 15px;
-	position: relative;
-	--line-color: #ebebeb;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  position: relative;
+  --line-color: #ebebeb;
 
-	@media #{$mobile-only} {
-		flex-direction: column;
-		text-align: center;
-		gap: 0;
+  @media #{$mobile-only} {
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
 
-		&::after {
-			content: "";
-			position: absolute;
-			width: 100vw;
-			height: 1px;
-			right: 0;
-			bottom: 0;
-			background-color: var(--line-color,);
-			box-shadow: 100vw 0 0 0 var(--line-color);
-			z-index: 2;
-		}
-	}
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 1px;
+      right: 0;
+      bottom: 0;
+      background-color: var(--line-color,);
+      box-shadow: 100vw 0 0 0 var(--line-color);
+      z-index: 2;
+    }
+  }
 
-	@media #{$tablet-only} {
-		margin-right: -10px;
-		margin-top: 5px;
-		gap: 16px;
-	}
+  @media #{$tablet-only} {
+    margin-right: -10px;
+    margin-top: 5px;
+    gap: 16px;
+  }
 
-	@media #{$desktop-only} {
-		gap: 19px;
-		margin-right: -8px;
-	}
+  @media #{$desktop-only} {
+    gap: 19px;
+    margin-right: -8px;
+  }
 }
 
 
 .navigation__item {
-	position: relative;
+  position: relative;
 
-	@media #{$mobile-only} {
-		&::before {
-			content: "";
-			position: absolute;
-			width: 100vw;
-			height: 1px;
-			right: 0;
-			background-color: var(--line-color, #ebebeb);
-			box-shadow: 100vw 0 0 0 var(--line-color);
-			z-index: 2;
-		}
-	}
+  @media #{$mobile-only} {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 1px;
+      right: 0;
+      background-color: var(--line-color, #ebebeb);
+      box-shadow: 100vw 0 0 0 var(--line-color);
+      z-index: 2;
+    }
+  }
 
-	&::marker {
-		color: transparent;
-	}
+  &::marker {
+    color: transparent;
+  }
 }
 
 .navigation__link {
-	font-family: var(--accent-font);
-	color: var(--link-color, #000000);
-	text-decoration: none;
-	text-transform: uppercase;
-	padding: 10px;
-	font-size: 18px;
-	line-height: 24px;
-	font-style: normal;
-	font-weight: 400;
-	position: relative;
-	display: block;
+  font-family: var(--accent-font);
+  color: var(--link-color, #000000);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+  display: block;
 
-	@media #{$mobile-only} {
-		font-size: 20px;
-		line-height: 20px;
-		font-weight: 500;
-		padding: 22px 15px 24px;
-	}
+  @media #{$mobile-only} {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    padding: 22px 15px 24px;
+  }
 
-	@media #{$desktop-only} {
-		line-height: 30px;
-		font-size: 20px;
-		padding: 8px;
-	}
+  @media #{$desktop-only} {
+    line-height: 30px;
+    font-size: 20px;
+    padding: 8px;
+  }
 
-	&:hover {
-		opacity: 0.6;
-	}
+  &:hover {
+    opacity: 0.6;
+  }
 
-	&:active {
-		opacity: 0.3;
-	}
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .navigation__link[aria-current="page"] {
-	@media #{$not-mobile} {
-		&::after {
-			position: absolute;
-			content: "";
-			height: 2px;
-			bottom: 0;
-			right: 8px;
-			left: 8px;
-			background-color: var(--border-color);
-		}
-	}
+  @media #{$not-mobile} {
+    &::after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      bottom: 0;
+      right: 8px;
+      left: 8px;
+      background-color: var(--border-color);
+    }
+  }
 }
 
 .navigation__toggle {
-	width: 24px;
-	height: 24px;
-	border: none;
-	position: absolute;
-	top: -45px;
-	right: 0;
-	z-index: 2;
-	cursor: pointer;
-	background-color: transparent;
-	background-image: url("../../icons/stack.svg#burger-menu");
-	background-position: center;
+  width: 24px;
+  height: 24px;
+  border: none;
+  position: absolute;
+  top: -45px;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("../../icons/stack.svg#burger-menu");
+  background-position: center;
 
-	@media #{$not-mobile} {
-		display: none;
-	}
+  @media #{$not-mobile} {
+    display: none;
+  }
 }
 
 .navigation--closed .navigation__toggle {
-	background-image: url("../../icons/stack.svg#burger-menu");
-	background-position: center;
+  background-image: url("../../icons/stack.svg#burger-menu");
+  background-position: center;
 }
 
 .navigation--opened .navigation__toggle {
-	background-image: url("../../icons/stack.svg#cross");
-	background-position: center;
+  background-image: url("../../icons/stack.svg#cross");
+  background-position: center;
 }
 
 .navigation--nojs .navigation__toggle {
-	display: none;
+  display: none;
 }
 
 .navigation--nojs .navigation__wrapper {
-	visibility: visible;
-	position: static;
+  visibility: visible;
+  position: static;
 }

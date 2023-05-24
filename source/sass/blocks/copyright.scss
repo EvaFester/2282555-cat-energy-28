@@ -1,61 +1,61 @@
 
 .copyright {
-	justify-self: stretch;
+  justify-self: stretch;
 
-	@media #{$not-mobile} {
-		justify-self: end;
-	}
+  @media #{$not-mobile} {
+    justify-self: end;
+  }
 }
 
 .copyright__link {
-	color: #444444;
-	text-decoration: none;
-	font-size: 16px;
-	line-height: 19px;
-	display: flex;
+  color: #444444;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
 
-	&:hover {
-		--color: hsl(var(--accent-hsl));
-	}
+  &:hover {
+    --color: hsl(var(--accent-hsl));
+  }
 
-	&:focus-visible {
-		--color: hsl(var(--accent-hsl));
-	}
+  &:focus-visible {
+    --color: hsl(var(--accent-hsl));
+  }
 
-	&:active {
-		--color: hsl(var(--accent-hsl) / 0.3);
-		color: hsl(0 0% 27% / 0.3);
-	}
+  &:active {
+    --color: hsl(var(--accent-hsl) / 0.3);
+    color: hsl(0 0% 27% / 0.3);
+  }
 
 
-	@media #{$mobile-only} {
-		position: relative;
-		margin-top: 11px;
-	}
+  @media #{$mobile-only} {
+    position: relative;
+    margin-top: 11px;
+  }
 
-	@media #{$not-mobile} {
-		justify-content: end;
-		align-items: center;
-	}
+  @media #{$not-mobile} {
+    justify-content: end;
+    align-items: center;
+  }
 
-	&::after {
+  &::after {
 
-		display: block;
-		content: "";
-		width: 27px;
-		height: 34px;
-		mask: url("../../icons/stack.svg#copyright-html-academy") no-repeat center / cover;
-		background: var(--color,
-		hsl(0 0% 40%));
+    display: block;
+    content: "";
+    width: 27px;
+    height: 34px;
+    mask: url("../../icons/stack.svg#copyright-html-academy") no-repeat center / cover;
+    background: var(--color,
+    hsl(0 0% 40%));
 
-		@media #{$mobile-only} {
-			position: absolute;
-			right: 0;
-			top: -7px;
-		}
+    @media #{$mobile-only} {
+      position: absolute;
+      right: 0;
+      top: -7px;
+    }
 
-		@media #{$not-mobile} {
-			margin-left: 28px;
-		}
-	}
+    @media #{$not-mobile} {
+      margin-left: 28px;
+    }
+  }
 }

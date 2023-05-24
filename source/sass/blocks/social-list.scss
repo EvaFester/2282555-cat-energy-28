@@ -1,20 +1,20 @@
 .social-list {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0;
-	gap: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 4px;
 
-	@media #{$mobile-only} {
-		padding: 10px 0;
-		border-top: solid 1px #d9d9d9;
-		border-bottom: solid 1px #d9d9d9;
-		justify-self: stretch;
-		justify-content: center;
-	}
+  @media #{$mobile-only} {
+    padding: 10px 0;
+    border-top: solid 1px #d9d9d9;
+    border-bottom: solid 1px #d9d9d9;
+    justify-self: stretch;
+    justify-content: center;
+  }
 }
 
 .social-list__item {
-	&::marker {
-		color: transparent;
-	}
+  &::marker {
+    color: transparent;
+  }
 }

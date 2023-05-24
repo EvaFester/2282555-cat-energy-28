@@ -1,27 +1,28 @@
 {
-	"customSyntax": "postcss-scss",
-	"extends": "stylelint-config-firefoxic",
-	"rules": {
-		"at-rule-no-unknown": [
-			true,
-			{
-				"ignoreAtRules": [
-					"each",
-					"if",
-					"include",
-					"mixin",
-					"while"
-				]
-			}
-		],
-		"function-no-unknown": [
-			true,
-			{
-				"ignoreFunctions": [
-					"/^get/",
-					"if"
-				]
-			}
-		]
-	}
+  "customSyntax": "postcss-scss",
+  "extends": "stylelint-config-firefoxic",
+  "rules": {
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "each",
+          "if",
+          "include",
+          "mixin",
+          "while"
+        ]
+      }
+    ],
+    "codeguide/indentation": 2,
+    "function-no-unknown": [
+      true,
+      {
+        "ignoreFunctions": [
+          "/^get/",
+          "if"
+        ]
+      }
+    ]
+  }
 }

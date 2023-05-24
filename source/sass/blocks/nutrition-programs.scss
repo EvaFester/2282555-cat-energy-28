@@ -1,170 +1,170 @@
 
 .nutrition-programs {
-	display: grid;
-	gap: 20px;
-	text-align: left;
+  display: grid;
+  gap: 20px;
+  text-align: left;
 
-	@media #{$mobile-only} {
-		padding: 20px 0 19px;
-	}
+  @media #{$mobile-only} {
+    padding: 20px 0 19px;
+  }
 
-	@media #{$tablet-only} {
-		gap: 30px;
-	}
+  @media #{$tablet-only} {
+    gap: 30px;
+  }
 
-	@media #{$desktop-only} {
-		grid-template-columns: repeat(2, 1fr);
-		gap: 80px;
-		padding-top: 30px;
-		padding-bottom: 70px;
-	}
+  @media #{$desktop-only} {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+  }
 }
 
 .nutrition-programs__item {
-	position: relative;
-	display: flow-root;
-	background-color: #f2f2f2;
-	padding: 20px;
-	padding-bottom: 14px;
-	--circle-diameter: calc(100% * 200 / 280);
-	--icon-size: 70px;
-	--icon-position: left;
+  position: relative;
+  display: flow-root;
+  background-color: #f2f2f2;
+  padding: 20px;
+  padding-bottom: 14px;
+  --circle-diameter: calc(100% * 200 / 280);
+  --icon-size: 70px;
+  --icon-position: left;
 
-	&--slim {
-		--icon: url("../../icons/stack.svg#cat_sitting");
-	}
+  &--slim {
+    --icon: url("../../icons/stack.svg#cat_sitting");
+  }
 
-	&--pro {
-		--icon: url("../../icons/stack.svg#cat_walking");
-	}
+  &--pro {
+    --icon: url("../../icons/stack.svg#cat_walking");
+  }
 
-	@media #{$tablet-only} {
-		--icon-size: 280px;
-		--icon-position: right;
-		padding: 50px 41px 42px 53px;
-	}
+  @media #{$tablet-only} {
+    --icon-size: 280px;
+    --icon-position: right;
+    padding: 50px 41px 42px 53px;
+  }
 
-	@media #{$desktop-only} {
-		--icon-size: 140px;
+  @media #{$desktop-only} {
+    --icon-size: 140px;
 
-		padding: 25px 50px 50px;
-		font-size: 16px;
-		line-height: 24px;
-	}
+    padding: 25px 50px 50px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 
-	&::before {
-		content: "";
-		display: block;
-		float: var(--icon-position);
-		block-size: var(--icon-size);
-		inline-size: var(--icon-size);
-		background: var(--icon) no-repeat center/ cover,
-			radial-gradient(
-				closest-side,
-				#68b738 calc(var(--circle-diameter) - 0.5px),
-				transparent calc(var(--circle-diameter) + 0.5px)
-			);
+  &::before {
+    content: "";
+    display: block;
+    float: var(--icon-position);
+    block-size: var(--icon-size);
+    inline-size: var(--icon-size);
+    background: var(--icon) no-repeat center/ cover,
+      radial-gradient(
+        closest-side,
+        #68b738 calc(var(--circle-diameter) - 0.5px),
+        transparent calc(var(--circle-diameter) + 0.5px)
+      );
 
-		@media #{$mobile-only} {
-			margin: -5px 10px 0 -8px;
-		}
+    @media #{$mobile-only} {
+      margin: -5px 10px 0 -8px;
+    }
 
-		@media #{$tablet-only} {
-			transform: translate(20px, 3px);
-		}
+    @media #{$tablet-only} {
+      transform: translate(20px, 3px);
+    }
 
-		@media #{$desktop-only} {
-			transform: translate(-20px, 2px);
-		}
-	}
+    @media #{$desktop-only} {
+      transform: translate(-20px, 2px);
+    }
+  }
 }
 
 .nutrition-programs__title {
-	margin: 10px auto 29px;
+  margin: 10px auto 29px;
 
-	@media #{$tablet-only} {
-		margin-top: 27px;
-		margin-bottom: 25px;
-	}
+  @media #{$tablet-only} {
+    margin-top: 27px;
+    margin-bottom: 25px;
+  }
 
-	@media #{$desktop-only} {
-		margin-top: 50px;
-		margin-left: 163px;
-	}
+  @media #{$desktop-only} {
+    margin-top: 50px;
+    margin-left: 163px;
+  }
 }
 
 .nutrition-programs__text-wrapper {
-	@media #{$tablet-only} {
-		margin-bottom: 27px;
-		font-size: 16px;
-		line-height: 24px;
-	}
+  @media #{$tablet-only} {
+    margin-bottom: 27px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 
-	@media #{$desktop-only} {
-		margin-bottom: 17px;
-		margin-top: 74px;
-	}
+  @media #{$desktop-only} {
+    margin-bottom: 17px;
+    margin-top: 74px;
+  }
 }
 
 .nutrition-programs__link {
-	min-width: 140px;
-	margin-right: auto;
-	margin-left: -10px;
-	margin-top: 31px;
-	padding: 10px;
-	color: #000000;
-	font-size: 16px;
-	line-height: 16px;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-family: var(--accent-font);
-	float: left;
-	display: flex;
-	gap: 15px;
-	align-items: center;
+  min-width: 140px;
+  margin-right: auto;
+  margin-left: -10px;
+  margin-top: 31px;
+  padding: 10px;
+  color: #000000;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: var(--accent-font);
+  float: left;
+  display: flex;
+  gap: 15px;
+  align-items: center;
 
-	@media #{$mobile-only} {
-		&::before {
-			content: "";
-			position: absolute;
-			width: calc(100% - 20px - 20px);
-			height: 1px;
-			right: 20px;
-			background-color: #d9d9d9;
-			bottom: 57px;
-		}
-	}
+  @media #{$mobile-only} {
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(100% - 20px - 20px);
+      height: 1px;
+      right: 20px;
+      background-color: #d9d9d9;
+      bottom: 57px;
+    }
+  }
 
-	@media #{$not-mobile} {
-		font-size: 20px;
-		line-height: 30px;
-		gap: 25px;
-	}
+  @media #{$not-mobile} {
+    font-size: 20px;
+    line-height: 30px;
+    gap: 25px;
+  }
 
-	&:hover {
-		--arrow-pose: 0;
-	}
+  &:hover {
+    --arrow-pose: 0;
+  }
 
-	&:active {
-		--color: hsl(0 0% 0% / 0.3);
-		color: hsl(0 0% 0% / 0.3);
-	}
+  &:active {
+    --color: hsl(0 0% 0% / 0.3);
+    color: hsl(0 0% 0% / 0.3);
+  }
 
-	&::after {
-		content: "";
-		display: block;
-		width: 32px;
-		height: 12px;
-		mask: url("../../icons/stack.svg#arrow") no-repeat var(--arrow-pose, -8px) / 32px;
-		background: var(--color, hsl(0 0% 0%));
-		transition: mask-position 0.1s;
-	}
+  &::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 12px;
+    mask: url("../../icons/stack.svg#arrow") no-repeat var(--arrow-pose, -8px) / 32px;
+    background: var(--color, hsl(0 0% 0%));
+    transition: mask-position 0.1s;
+  }
 
-	@media #{$tablet-only} {
-		margin-top: 14px;
-	}
+  @media #{$tablet-only} {
+    margin-top: 14px;
+  }
 
-	@media #{$desktop-only} {
-		margin-top: 0;
-	}
+  @media #{$desktop-only} {
+    margin-top: 0;
+  }
 }

@@ -1,43 +1,43 @@
 .page {
-	height: 100%;
-	font-family: var(--main-font);
-	font-size: 14px;
-	line-height: 18px;
-	color: var(--main-color);
+  height: 100%;
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--main-color);
 }
 
 .page__header {
-	@media #{$desktop-only} {
-		margin-top: 53px;
-	}
+  @media #{$desktop-only} {
+    margin-top: 53px;
+  }
 }
 
 .page__body {
-	margin: 0;
-	min-height: 100%;
+  margin: 0;
+  min-height: 100%;
 }
 
 .page__footer {
-	background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .page__leveler {
-	--indent-min: 20;
-	--indent-max: 30;
-	--vp-min: 320;
-	--vp-max: 768;
+  --indent-min: 20;
+  --indent-max: 30;
+  --vp-min: 320;
+  --vp-max: 768;
 
-	--increment-indent: calc(var(--indent-max) - var(--indent-min));
-	--increment-vp: calc(var(--vp-max) - var(--vp-min));
-	--content-indent: calc(var(--indent-min) * 1px + var(--increment-indent) * (100vw - var(--vp-min) * 1px) / var(--increment-vp));
-	margin-inline: var(--content-indent);
+  --increment-indent: calc(var(--indent-max) - var(--indent-min));
+  --increment-vp: calc(var(--vp-max) - var(--vp-min));
+  --content-indent: calc(var(--indent-min) * 1px + var(--increment-indent) * (100vw - var(--vp-min) * 1px) / var(--increment-vp));
+  margin-inline: var(--content-indent);
 
-	@media #{$not-mobile} {
-		--content-indent: calc(var(--indent-max) * 1px);
-	}
+  @media #{$not-mobile} {
+    --content-indent: calc(var(--indent-max) * 1px);
+  }
 
-	@media #{$desktop-only} {
-		--content-indent: auto;
-		width: 1220px;
-	}
+  @media #{$desktop-only} {
+    --content-indent: auto;
+    width: 1220px;
+  }
 }

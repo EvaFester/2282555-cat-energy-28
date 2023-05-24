@@ -1,88 +1,88 @@
 
 .form-additions__list {
-	margin: 0;
-	padding: 0;
-	display: grid;
-	grid-template-columns: 1fr;
-	row-gap: 12px;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 12px;
 
-	@media #{$tablet-only} {
-		grid-template-columns: repeat(2, 1fr);
-		column-gap: 56px;
-		row-gap: 30px;
-	}
+  @media #{$tablet-only} {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 56px;
+    row-gap: 30px;
+  }
 
-	@media #{$desktop-only} {
-		grid-template-columns: repeat(4, 1fr);
-		column-gap: 80px;
-	}
+  @media #{$desktop-only} {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
 }
 
 .form-additions__item {
-	display: flex;
-	gap: 16px;
-	align-items: center;
+  display: flex;
+  gap: 16px;
+  align-items: center;
 
-	@media #{$not-mobile} {
-		gap: 20px;
-	}
+  @media #{$not-mobile} {
+    gap: 20px;
+  }
 
-	&::marker {
-		color: transparent;
-	}
+  &::marker {
+    color: transparent;
+  }
 }
 
 .form-additions__title {
-	@media #{$mobile-only} {
-		margin-bottom: 31px;
-	}
+  @media #{$mobile-only} {
+    margin-bottom: 31px;
+  }
 
-	@media #{$not-mobile} {
-		margin-bottom: 57px;
-	}
+  @media #{$not-mobile} {
+    margin-bottom: 57px;
+  }
 
-	@media #{$tablet-only} {
-		margin-left: 0;
-	}
+  @media #{$tablet-only} {
+    margin-left: 0;
+  }
 }
 
 .form-additions__control {
-	--check-color: hsl(97 53% 47% / 1);
-	--control-size: 40px;
-	appearance: none;
-	background-color: #ffffff;
-	margin: 0;
-	width: var(--control-size);
-	height: var(--control-size);
-	border: solid 1px var(--color, hsl(0 0% 80% / 1));
-	display: grid;
-	place-content: center;
-	flex-shrink: 0;
+  --check-color: hsl(97 53% 47% / 1);
+  --control-size: 40px;
+  appearance: none;
+  background-color: #ffffff;
+  margin: 0;
+  width: var(--control-size);
+  height: var(--control-size);
+  border: solid 1px var(--color, hsl(0 0% 80% / 1));
+  display: grid;
+  place-content: center;
+  flex-shrink: 0;
 
-	@media #{$mobile-only} {
-		--control-size: 30px;
-	}
+  @media #{$mobile-only} {
+    --control-size: 30px;
+  }
 
-	&:hover {
-		--color: hsl(0 0% 73% / 1);
-	}
+  &:hover {
+    --color: hsl(0 0% 73% / 1);
+  }
 
-	&:checked {
-		&::before {
-			width: var(--control-size);
-			height: var(--control-size);
-			content: "";
-			mask: url("../../icons/stack.svg#tick-checkbox") no-repeat center / contain;
-			background-color: var(--check-color);
-		}
-	}
+  &:checked {
+    &::before {
+      width: var(--control-size);
+      height: var(--control-size);
+      content: "";
+      mask: url("../../icons/stack.svg#tick-checkbox") no-repeat center / contain;
+      background-color: var(--check-color);
+    }
+  }
 
-	&:disabled {
-		--color: hsl(0 0% 73% / 0.3);
-		--check-color: hsl(97 53% 47% / 0.3);
-	}
+  &:disabled {
+    --color: hsl(0 0% 73% / 0.3);
+    --check-color: hsl(97 53% 47% / 0.3);
+  }
 }
 
 .form-additions__control:disabled + .form-additions__text {
-	color: hsl(0 0% 0% / 0.3);
+  color: hsl(0 0% 0% / 0.3);
 }

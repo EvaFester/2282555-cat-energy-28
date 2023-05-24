@@ -5,6 +5,6 @@ navMain.classList.remove(`navigation--nojs`)
 navMain.classList.replace(`navigation--opened`, `navigation--closed`)
 
 navToggle.addEventListener(`click`, () => {
-	navMain.classList.toggle(`navigation--closed`)
-	navMain.classList.toggle(`navigation--opened`)
+  navMain.classList.toggle(`navigation--closed`)
+  navMain.classList.toggle(`navigation--opened`)
 })

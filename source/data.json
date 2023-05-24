@@ -1,263 +1,263 @@
 {
-	"SERVER_ROOT": "./build/",
-	"projectName": "Cat Energy",
-	"pages": [
-		{
-			"path": "./",
-			"name": "Главная"
-		},
-		{
-			"path": "./catalog.html",
-			"name": "Каталог продукции"
-		},
-		{
-			"path": "./form.html",
-			"name": "Подбор программы"
-		}
-	],
-	"viewports": {
-		"desktop": 1280,
-		"tablet": 768,
-		"mobile": null
-	},
-	"images": {
-		"hero-product": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "desktop",
-					"width": 552,
-					"height": 499
-				},
-				{
-					"viewport": "tablet",
-					"width": 709,
-					"height": 609
-				},
-				{
-					"viewport": "mobile",
-					"width": 280,
-					"height": 270
-				}
-			]
-		},
-		"hero-background": {
-			"ext": "jpg",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "tablet",
-					"width": 560,
-					"height": 512
-				},
-				{
-					"viewport": "mobile",
-					"width": 280,
-					"height": 256
-				}
-			]
-		},
-		"slider-before": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "tablet",
-					"width": 560,
-					"height": 512
-				},
-				{
-					"viewport": "mobile",
-					"width": 280,
-					"height": 256
-				}
-			]
-		},
-		"slider-after": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "tablet",
-					"width": 560,
-					"height": 512
-				},
-				{
-					"viewport": "mobile",
-					"width": 280,
-					"height": 256
-				}
-			]
-		},
-		"products/pro-chicken500": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "tablet",
-					"width": 161,
-					"height": 172
-				},
-				{
-					"viewport": "mobile",
-					"width": 68,
-					"height": 86
-				}
-			]
-		},
-		"products/pro-chicken1000": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "desktop",
-					"width": 172,
-					"height": 196
-				},
-				{
-					"viewport": "tablet",
-					"width": 168,
-					"height": 206
-				},
-				{
-					"viewport": "mobile",
-					"width": 84,
-					"height": 100
-				}
-			]
-		},
-		"products/pro-fish500": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "tablet",
-					"width": 163,
-					"height": 174
-				},
-				{
-					"viewport": "mobile",
-					"width": 68,
-					"height": 78
-				}
-			]
-		},
-		"products/pro-fish1000": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "desktop",
-					"width": 172,
-					"height": 196
-				},
-				{
-					"viewport": "tablet",
-					"width": 168,
-					"height": 200
-				},
-				{
-					"viewport": "mobile",
-					"width": 84,
-					"height": 100
-				}
-			]
-		},
-		"products/slim-buckwheat500": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "tablet",
-					"width": 161,
-					"height": 172
-				},
-				{
-					"viewport": "mobile",
-					"width": 68,
-					"height": 78
-				}
-			]
-		},
-		"products/slim-buckwheat1000": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "desktop",
-					"width": 172,
-					"height": 196
-				},
-				{
-					"viewport": "tablet",
-					"width": 168,
-					"height": 200
-				},
-				{
-					"viewport": "mobile",
-					"width": 84,
-					"height": 100
-				}
-			]
-		},
-		"products/slim-rice500": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "tablet",
-					"width": 163,
-					"height": 174
-				},
-				{
-					"viewport": "mobile",
-					"width": 72,
-					"height": 84
-				}
-			]
-		},
-		"promo-background": {
-			"ext": "jpg",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "desktop",
-					"width": 245,
-					"height": 289
-				},
-				{
-					"viewport": "tablet",
-					"width": 707,
-					"height": 200
-				},
-				{
-					"viewport": "mobile",
-					"width": 279,
-					"height": 289
-				}
-			]
-		},
-		"map": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "desktop",
-					"width": 1220,
-					"height": 400
-				},
-				{
-					"viewport": "tablet",
-					"width": 768,
-					"height": 400
-				},
-				{
-					"viewport": "mobile",
-					"width": 320,
-					"height": 362
-				}
-			]
-		}
-	}
+  "SERVER_ROOT": "./build/",
+  "projectName": "Cat Energy",
+  "pages": [
+    {
+      "path": "./",
+      "name": "Главная"
+    },
+    {
+      "path": "./catalog.html",
+      "name": "Каталог продукции"
+    },
+    {
+      "path": "./form.html",
+      "name": "Подбор программы"
+    }
+  ],
+  "viewports": {
+    "desktop": 1280,
+    "tablet": 768,
+    "mobile": null
+  },
+  "images": {
+    "hero-product": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "desktop",
+          "width": 552,
+          "height": 499
+        },
+        {
+          "viewport": "tablet",
+          "width": 709,
+          "height": 609
+        },
+        {
+          "viewport": "mobile",
+          "width": 280,
+          "height": 270
+        }
+      ]
+    },
+    "hero-background": {
+      "ext": "jpg",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "tablet",
+          "width": 560,
+          "height": 512
+        },
+        {
+          "viewport": "mobile",
+          "width": 280,
+          "height": 256
+        }
+      ]
+    },
+    "slider-before": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "tablet",
+          "width": 560,
+          "height": 512
+        },
+        {
+          "viewport": "mobile",
+          "width": 280,
+          "height": 256
+        }
+      ]
+    },
+    "slider-after": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "tablet",
+          "width": 560,
+          "height": 512
+        },
+        {
+          "viewport": "mobile",
+          "width": 280,
+          "height": 256
+        }
+      ]
+    },
+    "products/pro-chicken500": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "tablet",
+          "width": 161,
+          "height": 172
+        },
+        {
+          "viewport": "mobile",
+          "width": 68,
+          "height": 86
+        }
+      ]
+    },
+    "products/pro-chicken1000": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "desktop",
+          "width": 172,
+          "height": 196
+        },
+        {
+          "viewport": "tablet",
+          "width": 168,
+          "height": 206
+        },
+        {
+          "viewport": "mobile",
+          "width": 84,
+          "height": 100
+        }
+      ]
+    },
+    "products/pro-fish500": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "tablet",
+          "width": 163,
+          "height": 174
+        },
+        {
+          "viewport": "mobile",
+          "width": 68,
+          "height": 78
+        }
+      ]
+    },
+    "products/pro-fish1000": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "desktop",
+          "width": 172,
+          "height": 196
+        },
+        {
+          "viewport": "tablet",
+          "width": 168,
+          "height": 200
+        },
+        {
+          "viewport": "mobile",
+          "width": 84,
+          "height": 100
+        }
+      ]
+    },
+    "products/slim-buckwheat500": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "tablet",
+          "width": 161,
+          "height": 172
+        },
+        {
+          "viewport": "mobile",
+          "width": 68,
+          "height": 78
+        }
+      ]
+    },
+    "products/slim-buckwheat1000": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "desktop",
+          "width": 172,
+          "height": 196
+        },
+        {
+          "viewport": "tablet",
+          "width": 168,
+          "height": 200
+        },
+        {
+          "viewport": "mobile",
+          "width": 84,
+          "height": 100
+        }
+      ]
+    },
+    "products/slim-rice500": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "tablet",
+          "width": 163,
+          "height": 174
+        },
+        {
+          "viewport": "mobile",
+          "width": 72,
+          "height": 84
+        }
+      ]
+    },
+    "promo-background": {
+      "ext": "jpg",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "desktop",
+          "width": 245,
+          "height": 289
+        },
+        {
+          "viewport": "tablet",
+          "width": 707,
+          "height": 200
+        },
+        {
+          "viewport": "mobile",
+          "width": 279,
+          "height": 289
+        }
+      ]
+    },
+    "map": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "desktop",
+          "width": 1220,
+          "height": 400
+        },
+        {
+          "viewport": "tablet",
+          "width": 768,
+          "height": 400
+        },
+        {
+          "viewport": "mobile",
+          "width": 320,
+          "height": 362
+        }
+      ]
+    }
+  }
 }

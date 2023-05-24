@@ -1,83 +1,83 @@
 .catalog__title {
-	@media #{$mobile-only} {
-		margin-top: 25px;
-		margin-bottom: 40px;
-	}
+  @media #{$mobile-only} {
+    margin-top: 25px;
+    margin-bottom: 40px;
+  }
 
-	@media #{$tablet-only} {
-		margin-top: 63px;
-		margin-bottom: 87px;
-	}
+  @media #{$tablet-only} {
+    margin-top: 63px;
+    margin-bottom: 87px;
+  }
 
-	@media #{$desktop-only} {
-		margin-top: 68px;
-		margin-bottom: 84px;
-	}
+  @media #{$desktop-only} {
+    margin-top: 68px;
+    margin-bottom: 84px;
+  }
 }
 
 .catalog__list {
-	margin: 0;
-	padding: 0;
-	display: grid;
-	grid-template-columns: repeat(var(--column-count, 1), 1fr);
-	row-gap: 10px;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(var(--column-count, 1), 1fr);
+  row-gap: 10px;
 
-	@media #{$mobile-only} {
-		row-gap: 25px;
-	}
+  @media #{$mobile-only} {
+    row-gap: 25px;
+  }
 
-	@media #{$not-mobile} {
-		--column-count: 2;
-		column-gap: 60px;
-		row-gap: 68px;
-	}
+  @media #{$not-mobile} {
+    --column-count: 2;
+    column-gap: 60px;
+    row-gap: 68px;
+  }
 
-	@media #{$desktop-only} {
-		--column-count: 4;
-		column-gap: 80px;
-		row-gap: 63px;
-	}
+  @media #{$desktop-only} {
+    --column-count: 4;
+    column-gap: 80px;
+    row-gap: 63px;
+  }
 }
 
 .catalog__item {
-	--line-color: #ebebeb;
+  --line-color: #ebebeb;
 
-	&::marker {
-		color: transparent;
-	}
+  &::marker {
+    color: transparent;
+  }
 
-	@media #{$mobile-only} {
-		position: relative;
+  @media #{$mobile-only} {
+    position: relative;
 
-		&::before {
-			content: "";
-			position: absolute;
-			width: 100vw;
-			height: 1px;
-			right: 0;
-			background-color: var(--line-color);
-			box-shadow: 100vw 0 0 0 var(--line-color);
-		}
-	}
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 1px;
+      right: 0;
+      background-color: var(--line-color);
+      box-shadow: 100vw 0 0 0 var(--line-color);
+    }
+  }
 }
 
 .catalog__item:last-child {
-	--line-color: #ebebeb;
-	margin-top: 85px;
+  --line-color: #ebebeb;
+  margin-top: 85px;
 
-	@media #{$mobile-only} {
-		margin: 0;
-		position: relative;
+  @media #{$mobile-only} {
+    margin: 0;
+    position: relative;
 
-		::after {
-			content: "";
-			position: absolute;
-			width: 100vw;
-			height: 1px;
-			right: 0;
-			bottom: -25px;
-			background-color: var(--line-color);
-			box-shadow: 100vw 0 0 0 var(--line-color);
-		}
-	}
+    ::after {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 1px;
+      right: 0;
+      bottom: -25px;
+      background-color: var(--line-color);
+      box-shadow: 100vw 0 0 0 var(--line-color);
+    }
+  }
 }

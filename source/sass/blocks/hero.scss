@@ -1,148 +1,148 @@
 .hero {
-	@media #{$mobile-only} {
-		position: relative;
-	}
+  @media #{$mobile-only} {
+    position: relative;
+  }
 
-	@media #{$desktop-only} {
-		min-height: 552px;
-		padding-top: 32px;
-		padding-bottom: 44px;
-	}
+  @media #{$desktop-only} {
+    min-height: 552px;
+    padding-top: 32px;
+    padding-bottom: 44px;
+  }
 
-	&::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		height: 100%;
-		background:
-			linear-gradient(
-				rgb(104 183 56 / 0.85),
-				rgb(104 183 56 / 0.85)
-			),
-			var(--bg-image) no-repeat var(--bg-position, center) / cover,
-			linear-gradient(
-				to right,
-				#505155,
-				#444347
-			);
-		z-index: -2;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background:
+      linear-gradient(
+        rgb(104 183 56 / 0.85),
+        rgb(104 183 56 / 0.85)
+      ),
+      var(--bg-image) no-repeat var(--bg-position, center) / cover,
+      linear-gradient(
+        to right,
+        #505155,
+        #444347
+      );
+    z-index: -2;
 
-		@media #{$mobile-only} {
-			height: 302px;
-		}
+    @media #{$mobile-only} {
+      height: 302px;
+    }
 
-		@media #{$tablet-only} {
-			content: none;
-		}
+    @media #{$tablet-only} {
+      content: none;
+    }
 
-		@media #{$desktop-only} {
-			--bg-position: 0px;
-			top: 0;
-			right: 0;
-			left: 50vw;
-			height: 694px;
-		}
-	}
+    @media #{$desktop-only} {
+      --bg-position: 0px;
+      top: 0;
+      right: 0;
+      left: 50vw;
+      height: 694px;
+    }
+  }
 
-	@include bg-image("hero-background");
+  @include bg-image("hero-background");
 }
 
 .hero__container {
-	display: grid;
+  display: grid;
 
-	@media #{$desktop-only} {
-		grid-template-columns: repeat(2, 1fr);
-	}
+  @media #{$desktop-only} {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .hero__text {
-	@media #{$mobile-only} {
-		display: contents;
-	}
+  @media #{$mobile-only} {
+    display: contents;
+  }
 
-	@media #{$tablet-only} {
-		padding: 0 90px;
-	}
+  @media #{$tablet-only} {
+    padding: 0 90px;
+  }
 
-	@media #{$desktop-only} {
-		padding: 0 80px;
-	}
+  @media #{$desktop-only} {
+    padding: 0 80px;
+  }
 }
 
 .hero__title {
-	font-family: var(--accent-font);
+  font-family: var(--accent-font);
 
 
-	@media #{$mobile-only} {
-		color: #ffffff;
-		line-height: 36px;
-		margin-block: 27px;
-		text-align: center;
-		margin-bottom: 10px;
-	}
+  @media #{$mobile-only} {
+    color: #ffffff;
+    line-height: 36px;
+    margin-block: 27px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 
-	@media #{$tablet-only} {
-		margin-top: 62px;
-		margin-bottom: 41px;
-	}
+  @media #{$tablet-only} {
+    margin-top: 62px;
+    margin-bottom: 41px;
+  }
 
-	@media #{$desktop-only} {
-		margin-top: 72px;
-		margin-bottom: 40px;
-	}
+  @media #{$desktop-only} {
+    margin-top: 72px;
+    margin-bottom: 40px;
+  }
 }
 
 .hero__slogan {
-	margin: 0;
-	text-transform: uppercase;
-	font-family: var(--accent-font);
+  margin: 0;
+  text-transform: uppercase;
+  font-family: var(--accent-font);
 
-	@media #{$mobile-only} {
-		color: #ffffff;
-		line-height: 14px;
-		text-align: center;
-		margin-bottom: 16px;
-	}
+  @media #{$mobile-only} {
+    color: #ffffff;
+    line-height: 14px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
 
-	@media #{$not-mobile} {
-		font-size: 20px;
-		line-height: 20px;
-	}
+  @media #{$not-mobile} {
+    font-size: 20px;
+    line-height: 20px;
+  }
 
-	@media #{$tablet-only} {
-		margin-bottom: 49px;
-	}
+  @media #{$tablet-only} {
+    margin-bottom: 49px;
+  }
 }
 
 .hero__button {
-	@media #{$mobile-only} {
-		order: 1;
-	}
+  @media #{$mobile-only} {
+    order: 1;
+  }
 
-	@media #{$not-mobile} {
-		width: 225px;
-		padding: 17px 10px;
-	}
+  @media #{$not-mobile} {
+    width: 225px;
+    padding: 17px 10px;
+  }
 
-	@media #{$desktop-only} {
-		margin-top: 53px;
-	}
+  @media #{$desktop-only} {
+    margin-top: 53px;
+  }
 }
 
 .hero__product-wrapper {
-	@media #{$not-mobile} {
-		z-index: -1;
-	}
+  @media #{$not-mobile} {
+    z-index: -1;
+  }
 
-	@media #{$tablet-only} {
-		margin-top: -81px;
-		margin-bottom: -5px;
-	}
+  @media #{$tablet-only} {
+    margin-top: -81px;
+    margin-bottom: -5px;
+  }
 
-	@media #{$desktop-only} {
-		transform: translateX(-27%);
-		margin-top: -11px;
-	}
+  @media #{$desktop-only} {
+    transform: translateX(-27%);
+    margin-top: -11px;
+  }
 }

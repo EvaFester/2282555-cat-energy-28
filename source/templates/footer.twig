@@ -1,51 +1,51 @@
 <footer class="page__footer">
-	<section class="location  {% if permalink == "./" %}location--background_white{% endif %}">
-		<div class="page__leveler  location__text-container">
-			<div class="location__text-wrapper">
-				<h2 class="visually-hidden">Адрес магазина</h2>
-				<div class="location__cooperation">
-					<p>Приглашаем<br>к сотрудничеству<br>дилеров!</p>
-				</div>
-				<address class="location__address">ул. Большая<br>Конюшенная, д. 19/8<br><span class="location__address-decor"></span>Санкт-Петербург</address>
-			</div>
-		</div>
-		<div class="location__map-container">
-			<iframe class="location__interactive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728594!2d30.320472477109544!3d59.93871647491513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1683464991656!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-			</iframe>
-			<noscript class="location__map-wrapper">
-				{% include "picture.twig" with {name: "map", class: "location__map", alt: "Интерактивная карта с адресом магазина."} %}
-			</noscript>
-		</div>
-	</section>
+  <section class="location  {% if permalink == "./" %}location--background_white{% endif %}">
+    <div class="page__leveler  location__text-container">
+      <div class="location__text-wrapper">
+        <h2 class="visually-hidden">Адрес магазина</h2>
+        <div class="location__cooperation">
+          <p>Приглашаем<br>к сотрудничеству<br>дилеров!</p>
+        </div>
+        <address class="location__address">ул. Большая<br>Конюшенная, д. 19/8<br><span class="location__address-decor"></span>Санкт-Петербург</address>
+      </div>
+    </div>
+    <div class="location__map-container">
+      <iframe class="location__interactive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728594!2d30.320472477109544!3d59.93871647491513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1683464991656!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <noscript class="location__map-wrapper">
+        {% include "picture.twig" with {name: "map", class: "location__map", alt: "Интерактивная карта с адресом магазина."} %}
+      </noscript>
+    </div>
+  </section>
 
-	<section class="contacts page__leveler">
-		<h2 class="visually-hidden">Контакты</h2>
-		<a class="logo logo--footer" href="./" {% if permalink == "./" %}aria-current="page" {% endif %}>
-			<svg class="logo__footer" width="128" height="24" role="img" aria-label="Логотип Cat Energy ведет на главную страницу сайта">
-				<use href="./img/logo.svg#brand-name-footer" aria-hidden="true"></use>
-			</svg>
-		</a>
-		<ul class="contacts__social social-list">
-			<li class="social-list__item">
-				<a class="social-button social-button--icon_vkontakte" href="https://vk.com/htmlacademy">
-					<span class="visually-hidden">Vkontakte</span>
-				</a>
-			</li>
-			<li class="social-list__item">
-				<a class="social-button social-button--icon_youtube" href="https://vk.com/htmlacademy">
-					<span class="visually-hidden">Youtube</span>
-				</a>
-			</li>
-			<li class="social-list__item">
-				<a class="social-button social-button--icon_telegram" href="https://vk.com/htmlacademy">
-					<span class="visually-hidden">Telegram</span>
-				</a>
-			</li>
-		</ul>
-		<div class="copyright">
-			<b class="copyright__text visually-hidden">Разработано:</b>
-			<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-		</div>
-	</section>
+  <section class="contacts page__leveler">
+    <h2 class="visually-hidden">Контакты</h2>
+    <a class="logo logo--footer" href="./" {% if permalink == "./" %}aria-current="page" {% endif %}>
+      <svg class="logo__footer" width="128" height="24" role="img" aria-label="Логотип Cat Energy ведет на главную страницу сайта">
+        <use href="./img/logo.svg#brand-name-footer" aria-hidden="true"></use>
+      </svg>
+    </a>
+    <ul class="contacts__social social-list">
+      <li class="social-list__item">
+        <a class="social-button social-button--icon_vkontakte" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">Vkontakte</span>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-button social-button--icon_youtube" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">Youtube</span>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-button social-button--icon_telegram" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">Telegram</span>
+        </a>
+      </li>
+    </ul>
+    <div class="copyright">
+      <b class="copyright__text visually-hidden">Разработано:</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </section>
 
 </footer>

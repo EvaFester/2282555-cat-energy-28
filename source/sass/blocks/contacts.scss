@@ -1,32 +1,32 @@
 .contacts {
-	display: grid;
-	gap: 20px;
-	grid-template-columns: repeat(var(--column-count, 1), 1fr);
-	justify-items: center;
-	align-items: center;
-	padding-top: 40px;
-	padding-bottom: 40px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(var(--column-count, 1), 1fr);
+  justify-items: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
-	@media #{$mobile-only} {
-		padding-bottom: 56px;
-		gap: 15px;
-	}
+  @media #{$mobile-only} {
+    padding-bottom: 56px;
+    gap: 15px;
+  }
 
-	@media #{$not-mobile} {
-		--column-count: 3;
-		gap: 37px;
-		justify-content: space-around;
-	}
+  @media #{$not-mobile} {
+    --column-count: 3;
+    gap: 37px;
+    justify-content: space-around;
+  }
 
-	@media #{$tablet-only} {
-		padding: 53px 0 55px;
-	}
+  @media #{$tablet-only} {
+    padding: 53px 0 55px;
+  }
 
-	@media #{$desktop-only} {
-		padding-bottom: 60px;
-	}
+  @media #{$desktop-only} {
+    padding-bottom: 60px;
+  }
 }
 
 .contacts__social {
-	margin: 0;
+  margin: 0;
 }

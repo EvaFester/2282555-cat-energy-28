@@ -1,136 +1,136 @@
 .features__title {
-	margin: 0 1px;
+  margin: 0 1px;
 
-	@media #{$tablet-only} {
-		margin-top: 45px;
-		margin-bottom: 71px;
-	}
+  @media #{$tablet-only} {
+    margin-top: 45px;
+    margin-bottom: 71px;
+  }
 
-	@media #{$desktop-only} {
-		margin-bottom: 73px;
-	}
+  @media #{$desktop-only} {
+    margin-bottom: 73px;
+  }
 }
 
 .features__list {
-	padding: 0;
-	margin: 0;
-	display: grid;
-	grid-template-columns: repeat(var(--column-count, 1), 1fr);
-	row-gap: 20px;
-	counter-reset: section;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(var(--column-count, 1), 1fr);
+  row-gap: 20px;
+  counter-reset: section;
 
-	@media #{$mobile-only} {
-		padding: 39px 1px 50px 1px;
-	}
+  @media #{$mobile-only} {
+    padding: 39px 1px 50px 1px;
+  }
 
-	@media #{$tablet-only} {
-		margin-right: 70px;
-		--column-count: 2;
-		row-gap: 80px;
-		column-gap: 130px;
-	}
+  @media #{$tablet-only} {
+    margin-right: 70px;
+    --column-count: 2;
+    row-gap: 80px;
+    column-gap: 130px;
+  }
 
-	@media #{$desktop-only} {
-		column-gap: 80px;
-		--column-count: 4;
-	}
+  @media #{$desktop-only} {
+    column-gap: 80px;
+    --column-count: 4;
+  }
 }
 
 .features__item {
-	--position: 2px;
-	position: relative;
-	display: grid;
-	grid-template-columns: 60px 1fr;
-	gap: 20px;
+  --position: 2px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 20px;
 
-	&::marker {
-		color: transparent;
-	}
-
-
-	&--br {
-		br {
-			display: none;
-		}
-
-		@media #{$not-mobile} {
-			br {
-				display: initial;
-			}
-		}
-	}
-
-	@media #{$mobile-only} {
-		align-items: center;
-	}
+  &::marker {
+    color: transparent;
+  }
 
 
-	@media #{$not-mobile} {
-		font-size: 16px;
-		line-height: 24px;
-		grid-template-columns: 1fr;
-		grid-template-rows: 80px 1fr;
-		gap: 31px;
-		min-height: 240px;
+  &--br {
+    br {
+      display: none;
+    }
+
+    @media #{$not-mobile} {
+      br {
+        display: initial;
+      }
+    }
+  }
+
+  @media #{$mobile-only} {
+    align-items: center;
+  }
 
 
-		&::after {
-			position: absolute;
-			color: #f2f2f2;
-			font-size: 280px;
-			font-family: var(--accent-font);
-			right: var(--position);
-			counter-increment: section;
-			content: counter(section);
-			z-index: -1;
-			transform: translateY(90px);
-		}
+  @media #{$not-mobile} {
+    font-size: 16px;
+    line-height: 24px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr;
+    gap: 31px;
+    min-height: 240px;
 
-		&--first::after {
-			--position: 20px;
-		}
-	}
 
-	@media #{$tablet-only} {
-		--position: 6px;
+    &::after {
+      position: absolute;
+      color: #f2f2f2;
+      font-size: 280px;
+      font-family: var(--accent-font);
+      right: var(--position);
+      counter-increment: section;
+      content: counter(section);
+      z-index: -1;
+      transform: translateY(90px);
+    }
 
-		&--first::after {
-			--position: 28px;
-		}
-	}
+    &--first::after {
+      --position: 20px;
+    }
+  }
 
-	&--icon_leaf {
-		--icon: url("../../icons/stack.svg#features_leaf");
-	}
+  @media #{$tablet-only} {
+    --position: 6px;
 
-	&--icon_tub {
-		--icon: url("../../icons/stack.svg#features_tub");
-	}
+    &--first::after {
+      --position: 28px;
+    }
+  }
 
-	&--icon_eat {
-		--icon: url("../../icons/stack.svg#features_eat");
-	}
+  &--icon_leaf {
+    --icon: url("../../icons/stack.svg#features_leaf");
+  }
 
-	&--icon_alarm {
-		--icon: url("../../icons/stack.svg#features_alarm");
-	}
+  &--icon_tub {
+    --icon: url("../../icons/stack.svg#features_tub");
+  }
 
-	&::before {
-		display: block;
-		content: "";
-		width: 60px;
-		height: 60px;
-		left: 0;
-		background-color: #68b738;
-		background-image: var(--icon);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: 40px;
+  &--icon_eat {
+    --icon: url("../../icons/stack.svg#features_eat");
+  }
 
-		@media #{$not-mobile} {
-			width: 80px;
-			height: 80px;
-			top: 40px;
-		}
-	}
+  &--icon_alarm {
+    --icon: url("../../icons/stack.svg#features_alarm");
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    left: 0;
+    background-color: #68b738;
+    background-image: var(--icon);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+
+    @media #{$not-mobile} {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+    }
+  }
 }

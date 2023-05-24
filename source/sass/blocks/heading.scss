@@ -1,83 +1,83 @@
 .heading {
-	font-family: var(--accent-font);
-	--line-color: #68b738;
-	font-style: normal;
-	color: #000000;
+  font-family: var(--accent-font);
+  --line-color: #68b738;
+  font-style: normal;
+  color: #000000;
 
-	&--lvl_1 {
-		font-size: 36px;
-		line-height: 40px;
-		color: #000000;
-		font-style: normal;
-		font-weight: 400;
+  &--lvl_1 {
+    font-size: 36px;
+    line-height: 40px;
+    color: #000000;
+    font-style: normal;
+    font-weight: 400;
 
-		@media #{$not-mobile} {
-			font-size: 60px;
-			line-height: 60px;
-		}
-	}
+    @media #{$not-mobile} {
+      font-size: 60px;
+      line-height: 60px;
+    }
+  }
 
-	&--lvl_2 {
-		font-size: 24px;
-		line-height: 26px;
-		color: #000000;
-		padding: 0;
+  &--lvl_2 {
+    font-size: 24px;
+    line-height: 26px;
+    color: #000000;
+    padding: 0;
 
-		@media #{$not-mobile} {
-			font-size: 36px;
-			line-height: 36px;
-		}
-	}
+    @media #{$not-mobile} {
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
 
-	&--lvl_3 {
-		font-size: 24px;
-		line-height: 37px;
-		color: #000000;
-		text-transform: uppercase;
-		font-weight: 400;
+  &--lvl_3 {
+    font-size: 24px;
+    line-height: 37px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 400;
 
-		@media #{$not-mobile} {
-			font-size: 36px;
-			line-height: 36px;
-		}
-	}
+    @media #{$not-mobile} {
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
 }
 
 .heading__wrapper {
-	position: relative;
+  position: relative;
 
-	&::before {
-		position: absolute;
-		content: "";
-		width: calc(100% + 40px + 37px);
-		height: 100%;
-		background-color: var(--base-color, #ffffff);
-		right: -37px;
-		z-index: -1;
+  &::before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 40px + 37px);
+    height: 100%;
+    background-color: var(--base-color, #ffffff);
+    right: -37px;
+    z-index: -1;
 
-		@media #{$mobile-only} {
-			right: -21px;
-		}
-	}
+    @media #{$mobile-only} {
+      right: -21px;
+    }
+  }
 }
 
 .heading--decor {
 
-	position: relative;
+  position: relative;
 
-	&::before {
-		content: "";
-		position: absolute;
-		width: 100vw;
-		height: 2px;
-		right: 0;
-		top: 15px;
-		background-color: var(--line-color);
-		box-shadow: 100vw 0 0 0 var(--line-color);
-		z-index: -1;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 2px;
+    right: 0;
+    top: 15px;
+    background-color: var(--line-color);
+    box-shadow: 100vw 0 0 0 var(--line-color);
+    z-index: -1;
 
-		@media #{$not-mobile} {
-			top: 22px;
-		}
-	}
+    @media #{$not-mobile} {
+      top: 22px;
+    }
+  }
 }

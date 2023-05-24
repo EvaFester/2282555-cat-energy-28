@@ -1,80 +1,80 @@
 .promo {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	min-height: 205px;
-	padding: 42px;
-	font-size: 16px;
-	line-height: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-height: 205px;
+  padding: 42px;
+  font-size: 16px;
+  line-height: 20px;
 
-	@media #{$tablet-only} {
-		grid-column: span 2;
-		min-height: 116px;
-		flex-direction: row-reverse;
-		align-items: center;
-		justify-content: end;
-	}
+  @media #{$tablet-only} {
+    grid-column: span 2;
+    min-height: 116px;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: end;
+  }
 
-	@media #{$desktop-only} {
-		grid-column: span 1;
-		grid-column-start: 4;
-		padding-bottom: 45px;
-	}
+  @media #{$desktop-only} {
+    grid-column: span 1;
+    grid-column-start: 4;
+    padding-bottom: 45px;
+  }
 
-	&::after {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		height: 100%;
-		background:
-			linear-gradient(
-				rgb(104 183 56 / 0.85),
-				rgb(104 183 56 / 0.85)
-			),
-			var(--bg-image) no-repeat center / cover,
-			linear-gradient(
-				to right,
-				#505155,
-				#444347
-			);
-		z-index: -1;
-	}
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background:
+      linear-gradient(
+        rgb(104 183 56 / 0.85),
+        rgb(104 183 56 / 0.85)
+      ),
+      var(--bg-image) no-repeat center / cover,
+      linear-gradient(
+        to right,
+        #505155,
+        #444347
+      );
+    z-index: -1;
+  }
 
-	@include bg-image("promo-background");
+  @include bg-image("promo-background");
 }
 
 .promo__description {
-	color: #ffffff;
-	text-align: center;
+  color: #ffffff;
+  text-align: center;
 
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
 
-	@media #{$tablet-only} {
-		text-align: left;
-		margin-right: 85px;
-		flex-direction: row;
-		gap: 266px;
-		margin-top: 0;
-	}
+  @media #{$tablet-only} {
+    text-align: left;
+    margin-right: 85px;
+    flex-direction: row;
+    gap: 266px;
+    margin-top: 0;
+  }
 
-	&::before {
-		display: block;
-		content: "";
-		width: 78px;
-		height: 80px;
-		top: 58px;
-		background-image: url("../../icons/stack.svg#promo_gift");
-		background-repeat: no-repeat;
-		background-position: center center;
+  &::before {
+    display: block;
+    content: "";
+    width: 78px;
+    height: 80px;
+    top: 58px;
+    background-image: url("../../icons/stack.svg#promo_gift");
+    background-repeat: no-repeat;
+    background-position: center center;
 
-		@media #{$tablet-only} {
-			left: 77px;
-		}
-	}
+    @media #{$tablet-only} {
+      left: 77px;
+    }
+  }
 }

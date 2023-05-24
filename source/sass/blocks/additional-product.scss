@@ -1,85 +1,85 @@
 
 .additional-product {
-	display: grid;
-	grid-template-columns: repeat(var(--column-count, 1), 1fr);
-	margin-bottom: 36px;
+  display: grid;
+  grid-template-columns: repeat(var(--column-count, 1), 1fr);
+  margin-bottom: 36px;
 
 
-	@media #{$not-mobile} {
-		--column-count: 2;
-		gap: 60px;
-		row-gap: 63px;
-		margin-bottom: 76px;
-	}
+  @media #{$not-mobile} {
+    --column-count: 2;
+    gap: 60px;
+    row-gap: 63px;
+    margin-bottom: 76px;
+  }
 
-	@media #{$desktop-only} {
-		--column-count: 4;
-		gap: 80px;
-		row-gap: 67px;
-		margin-bottom: 86px;
-	}
+  @media #{$desktop-only} {
+    --column-count: 4;
+    gap: 80px;
+    row-gap: 67px;
+    margin-bottom: 86px;
+  }
 }
 
 .additional-product__list {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 
-	@media #{$mobile-only} {
-		margin-bottom: 35px;
-	}
+  @media #{$mobile-only} {
+    margin-bottom: 35px;
+  }
 
-	@media #{$tablet-only} {
-		grid-column: span 2;
-		margin-bottom: 5px;
-	}
+  @media #{$tablet-only} {
+    grid-column: span 2;
+    margin-bottom: 5px;
+  }
 
-	@media #{$desktop-only} {
-		grid-column: span 3;
-	}
+  @media #{$desktop-only} {
+    grid-column: span 3;
+  }
 }
 
 .additional-product__item {
-	&::marker {
-		color: transparent;
-	}
-	border-top: solid 1px #cdcdcd;
+  &::marker {
+    color: transparent;
+  }
+  border-top: solid 1px #cdcdcd;
 
-	@media #{$mobile-only} {
-		padding: 13px 0 18px;
-	}
+  @media #{$mobile-only} {
+    padding: 13px 0 18px;
+  }
 
-	@media #{$tablet-only} {
-		border: solid 1px #cdcdcd;
-		border-bottom: none;
-	}
+  @media #{$tablet-only} {
+    border: solid 1px #cdcdcd;
+    border-bottom: none;
+  }
 
-	@media #{$desktop-only} {
-		min-height: 40px;
-		padding: 15px 0 17px;
-	}
+  @media #{$desktop-only} {
+    min-height: 40px;
+    padding: 15px 0 17px;
+  }
 }
 
 .additional-product__item:last-child {
-	border-bottom: solid 1px #cdcdcd;
+  border-bottom: solid 1px #cdcdcd;
 }
 
 .additional-product__title {
-	margin-top: 48px;
-	margin-bottom: 34px;
-	font-weight: 400;
+  margin-top: 48px;
+  margin-bottom: 34px;
+  font-weight: 400;
 
-	@media #{$not-mobile} {
-		grid-column: span 2;
-		margin-top: 68px;
-		margin-bottom: 13px;
-	}
+  @media #{$not-mobile} {
+    grid-column: span 2;
+    margin-top: 68px;
+    margin-bottom: 13px;
+  }
 
-	@media #{$tablet-only} {
-		margin-left: 37px;
-	}
+  @media #{$tablet-only} {
+    margin-left: 37px;
+  }
 
-	@media #{$desktop-only} {
-		grid-column: span 3;
-		margin-top: 76px;
-	}
+  @media #{$desktop-only} {
+    grid-column: span 3;
+    margin-top: 76px;
+  }
 }

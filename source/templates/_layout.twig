@@ -2,27 +2,27 @@
 <html class="page fallback" lang="ru">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>{{ projectName }}: {{ pages[pageId].name }}</title>
-	{% include "./detect-format.twig" %}
-	<link rel="stylesheet" href="./css/style.css">
-	<link rel="preload" href="./fonts/lato-regular.woff2" type="font/woff2" as="font" crossorigin>
-	<link rel="preload" href="./fonts/oswald-medium.woff2" type="font/woff2" as="font" crossorigin>
-	<link rel="preload" href="./fonts/oswald-regular.woff2" type="font/woff2" as="font" crossorigin>
-	<link rel="icon" href="./favicon.ico">
-	<link rel="icon" href="./favicons/favicon.svg" type="image/svg+xml">
-	<link rel="apple-touch-icon" href="./favicons/180.png">
-	<link rel="manifest" href="./manifest.webmanifest">
-	<script src="./js/navigation-script.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ projectName }}: {{ pages[pageId].name }}</title>
+  {% include "./detect-format.twig" %}
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preload" href="./fonts/lato-regular.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" href="./fonts/oswald-medium.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" href="./fonts/oswald-regular.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./favicons/180.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <script src="./js/navigation-script.js" defer></script>
 </head>
 
 <body class="page__body">
-	{% include "./header.twig" %}
+  {% include "./header.twig" %}
 
-	{% block main %}{% endblock %}
+  {% block main %}{% endblock %}
 
-	{% include "./footer.twig" %}
+  {% include "./footer.twig" %}
 </body>
 
 </html>

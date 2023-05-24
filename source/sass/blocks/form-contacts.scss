@@ -1,77 +1,77 @@
 .form-contacts {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 14px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
 
-	@media #{$tablet-only} {
-		row-gap: 25px;
-	}
+  @media #{$tablet-only} {
+    row-gap: 25px;
+  }
 
-	@media #{$desktop-only} {
-		grid-template-columns: repeat(2, 1fr);
-		gap: 80px;
-	}
+  @media #{$desktop-only} {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
 }
 
 .form-contacts__title {
-	@media #{$mobile-only} {
-		margin-bottom: 36px;
-	}
+  @media #{$mobile-only} {
+    margin-bottom: 36px;
+  }
 
-	@media #{$not-mobile} {
-		margin-bottom: 76px;
-	}
+  @media #{$not-mobile} {
+    margin-bottom: 76px;
+  }
 
-	@media #{$tablet-only} {
-		margin-left: 0;
-	}
+  @media #{$tablet-only} {
+    margin-left: 0;
+  }
 }
 
 .form-contacts__field {
-	padding: 10px 45px 10px 15px;
+  padding: 10px 45px 10px 15px;
 
-	@media #{$tablet-only} {
-		padding-left: 19px;
-	}
+  @media #{$tablet-only} {
+    padding-left: 19px;
+  }
 
-	@media #{$desktop-only} {
-		padding-left: 20px;
-	}
+  @media #{$desktop-only} {
+    padding-left: 20px;
+  }
 }
 
 .form-contacts__wrapper {
-	position: relative;
+  position: relative;
 }
 
 .form-contacts__icon {
-	position: absolute;
-	display: block;
-	box-sizing: border-box;
-	width: 20px;
-	height: 20px;
-	z-index: 2;
-	right: var(--icon-position, 15px);
-	mask-image: var(--icon);
-	background-color: var(--icon-color, #222222);
-	pointer-events: none;
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  right: var(--icon-position, 15px);
+  mask-image: var(--icon);
+  background-color: var(--icon-color, #222222);
+  pointer-events: none;
 
-	&--phone {
-		--icon: url("../../icons/stack.svg#form_phone");
-	}
+  &--phone {
+    --icon: url("../../icons/stack.svg#form_phone");
+  }
 
-	&--email {
-		--icon: url("../../icons/stack.svg#form_email");
-	}
+  &--email {
+    --icon: url("../../icons/stack.svg#form_email");
+  }
 
-	.form__field--erorr + & {
-		background-color: #ff8282;
-	}
+  .form__field--erorr + & {
+    background-color: #ff8282;
+  }
 
-	.form__field:focus + & {
-		background-color: #68b738;
-	}
+  .form__field:focus + & {
+    background-color: #68b738;
+  }
 
-	@media #{$tablet-only} {
-		--icon-position: 20px;
-	}
+  @media #{$tablet-only} {
+    --icon-position: 20px;
+  }
 }

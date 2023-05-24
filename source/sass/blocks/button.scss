@@ -1,45 +1,45 @@
 .button {
-	font-family: var(--accent-font);
-	color: #ffffff;
-	text-decoration: none;
-	text-transform: uppercase;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 10px;
-	background-color: var(--accent-color);
+  font-family: var(--accent-font);
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--accent-color);
 
-	&--color_basic {
-		--accent-color: #68b738;
+  &--color_basic {
+    --accent-color: #68b738;
 
-		&:hover {
-			--accent-color: #5eaa2f;
-		}
+    &:hover {
+      --accent-color: #5eaa2f;
+    }
 
-		&:active {
-			--accent-color: #5eaa2f;
-			color: hsl(0 0% 100% / 0.3);
-		}
-	}
+    &:active {
+      --accent-color: #5eaa2f;
+      color: hsl(0 0% 100% / 0.3);
+    }
+  }
 
-	&--color_gray {
-		--accent-color: #f2f2f2;
-		color: #444444;
+  &--color_gray {
+    --accent-color: #f2f2f2;
+    color: #444444;
 
-		&:hover {
-			--accent-color: #ebebeb;
-		}
+    &:hover {
+      --accent-color: #ebebeb;
+    }
 
-		&:active {
-			--accent-color: #ebebeb;
-			color: hsl(0 0% 27% / 0.3);
-		}
-	}
+    &:active {
+      --accent-color: #ebebeb;
+      color: hsl(0 0% 27% / 0.3);
+    }
+  }
 
-	&--main {
-		@media #{$not-mobile} {
-			font-size: 20px;
-			line-height: 20px;
-		}
-	}
+  &--main {
+    @media #{$not-mobile} {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
 }

@@ -1,32 +1,32 @@
 {
-	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-	"editor.codeActionsOnSave": {
-		"source.fixAll": true
-	},
-	"editor.detectIndentation": false,
-	"editor.guides.bracketPairs": true,
-	"editor.insertSpaces": false,
-	"editor.linkedEditing": true,
-	"editor.renderWhitespace": "selection",
-	"editor.wordWrap": "on",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.detectIndentation": false,
+  "editor.guides.bracketPairs": true,
+  "editor.insertSpaces": false,
+  "editor.linkedEditing": true,
+  "editor.renderWhitespace": "selection",
+  "editor.wordWrap": "on",
 
-	"files.insertFinalNewline": true,
-	"files.autoSave": "onFocusChange",
-	"files.trimFinalNewlines": true,
-	"files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.autoSave": "onFocusChange",
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
 
-	"html.format.indentHandlebars": true,
-	"html.format.maxPreserveNewLines": 1,
-	"html.format.wrapLineLength": 0,
+  "html.format.indentHandlebars": true,
+  "html.format.maxPreserveNewLines": 1,
+  "html.format.wrapLineLength": 0,
 
-	"stylelint.validate": [
-		"css",
-		"less",
-		"postcss",
-		"sass",
-		"scss"
-	],
+  "stylelint.validate": [
+    "css",
+    "less",
+    "postcss",
+    "sass",
+    "scss"
+  ],
 
-	"svg.preview.boundingBox": true,
-	"svg.preview.transparencyGrid": true
+  "svg.preview.boundingBox": true,
+  "svg.preview.transparencyGrid": true
 }

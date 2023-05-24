@@ -1,39 +1,39 @@
 .social-button {
-	display: block;
-	padding: 10px;
+  display: block;
+  padding: 10px;
 
-	&:hover {
-		--color: hsl(var(--accent-hsl));
-	}
+  &:hover {
+    --color: hsl(var(--accent-hsl));
+  }
 
-	&:focus-visible {
-		--color: hsl(var(--accent-hsl));
-	}
+  &:focus-visible {
+    --color: hsl(var(--accent-hsl));
+  }
 
-	&:active {
-		--color: hsl(var(--accent-hsl) / 0.3);
-	}
+  &:active {
+    --color: hsl(var(--accent-hsl) / 0.3);
+  }
 
-	&--icon_vkontakte {
-		--icon: url("../../icons/stack.svg#social_vkontakte");
-	}
+  &--icon_vkontakte {
+    --icon: url("../../icons/stack.svg#social_vkontakte");
+  }
 
-	&--icon_youtube {
-		--icon: url("../../icons/stack.svg#social_youtube");
-	}
+  &--icon_youtube {
+    --icon: url("../../icons/stack.svg#social_youtube");
+  }
 
-	&--icon_telegram {
-		--icon: url("../../icons/stack.svg#social_telegram");
-	}
+  &--icon_telegram {
+    --icon: url("../../icons/stack.svg#social_telegram");
+  }
 
-	&::before {
-		content: "";
-		display: block;
-		width: 28px;
-		height: 22px;
-		background: var(--color,
-		hsl(0 0% 40%)
-	);
-		mask: var(--icon) no-repeat center / cover;
-	}
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+    background: var(--color,
+    hsl(0 0% 40%)
+  );
+    mask: var(--icon) no-repeat center / cover;
+  }
 }
